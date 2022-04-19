@@ -22,3 +22,35 @@ html{
     margin-top: 60px;
 }
 /* mainvisual-wrapperここまで */
+
+/*headerここから*/
+header .container{
+    max-width: 1400px;
+    width: calc(100% - 140px);
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
+}
+nav{
+    width: 192px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #2D2D2D;
+}
+/*headerここまで*/
+
+/*concept-wrapperここから*/
+/*concept-wrapperここまで*/
+
+/*work-wrapperここから*/
+/*work-wrapperここまで*/
+
+/*footerここから*/
+/*footerここまで*/
