@@ -9,6 +9,26 @@ html{
     max-width: 990px;
     width: calc(100% - 36px);
 }
+h2{
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: #2D2D2D;
+}
+h3{
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #2D2D2D;
+    margin-bottom: 25px;
+}
+p{
+    width: 331px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #2D2D2D;
+}
+.contents-wrapper{
+    margin-left: 67px;
+}
 /* 共通ここまで */
 
 /* mainvisual-wrapperここから */
@@ -47,9 +67,17 @@ a{
 /*headerここまで*/
 
 /*concept-wrapperここから*/
+.concept-wrapper .container{
+    margin-top: 62px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 /*concept-wrapperここまで*/
 
 /*work-wrapperここから*/
+
 /*work-wrapperここまで*/
 
 /*footerここから*/
