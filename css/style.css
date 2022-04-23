@@ -6,40 +6,72 @@ html{
 }
 .container{
     margin: 0 auto;
-    max-width: 990px;
+    max-width: 964px;
     width: calc(100% - 36px);
+}
+img{
+    max-width: 100%;
 }
 h2{
     font-size: 2.4rem;
     font-weight: normal;
     color: #2D2D2D;
+    line-height: calc(24 /24);
 }
 h3{
     font-size: 1.6rem;
     font-weight: normal;
     color: #2D2D2D;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
+    line-height: calc(24 / 16);
+    letter-spacing: -0.1rem;
 }
 p{
     width: 331px;
     font-size: 1.6rem;
     font-weight: normal;
     color: #2D2D2D;
+    line-height: calc(27 / 16);
 }
 .contents-wrapper{
     margin-left: 67px;
+}
+
+@media screen and (max-width: 750px){
+    .contents-wrapper{
+        margin-left: initial;
+        margin-top: 7px;
+    }
+    h2{
+        font-size: 2.0rem;    
+    }
 }
 /* 共通ここまで */
 
 /* mainvisual-wrapperここから */
 .mainvisual-wrapper .container{
-    background-image: url(/images/mainvisual.png);
-    background-size: cover;
-    background-position: center;
     max-width: 1400px;
     width: calc(100% - 140px);
-    height: 590px;
     margin-top: 60px;
+} 
+.mainvisual-wrapper .PC{
+    display: block;
+}
+.mainvisual-wrapper .SP{
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    .mainvisual-wrapper .container{
+        margin-top: initial;
+        width: initial;
+    }
+    .mainvisual-wrapper .PC{
+        display: none;
+    }
+    .mainvisual-wrapper .SP{
+        display: block;
+    }
 }
 /* mainvisual-wrapperここまで */
 
@@ -49,10 +81,11 @@ header .container{
     width: calc(100% - 140px);
     display: flex;
     justify-content: flex-start;
-    margin-top: 32px;
+    margin-top: 22px;
 }
 nav{
-    width: 192px;
+    max-width: 192px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,22 +96,64 @@ a{
     font-size: 1.4rem;
     font-weight: normal;
     color: #2D2D2D;
+    letter-spacing: -0.1rem;
+}
+
+@media screen and (max-width: 750px){
+    header .container{
+        width: calc(100% - 36px);
+        margin-top: 13px;
+    }
+    nav{
+        margin-left: 36px;
+    }
 }
 /*headerここまで*/
 
 /*concept-wrapperここから*/
 .concept-wrapper .container{
-    margin-top: 62px;
+    margin-top: 57px;
     margin-bottom: 60px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+}
+
+@media screen and (max-width: 750px){
+    .concept-wrapper .container{
+        display: block;
+        margin-top: 44px;
+        margin-bottom: 54px;
+    }
+
 }
 /*concept-wrapperここまで*/
 
 /*work-wrapperここから*/
+.work-wrapper .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+}
 
+@media screen and (max-width: 750px){
+    .work-wrapper .container{
+        display: block;
+        margin-bottom: 65px;
+    }
+}
 /*work-wrapperここまで*/
 
 /*footerここから*/
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    width: initial;
+    font-size: 1.4rem;
+    letter-spacing: -0.08rem;
+}
 /*footerここまで*/
