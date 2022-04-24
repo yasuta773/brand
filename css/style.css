@@ -27,20 +27,36 @@ h3{
     letter-spacing: -0.1rem;
 }
 p{
-    width: 331px;
     font-size: 1.6rem;
     font-weight: normal;
     color: #2D2D2D;
     line-height: calc(27 / 16);
 }
+.flex-wrapper{
+    display: flex;
+    align-items: center;
+}
+.flex-wrapper > .contents-wrapper,
+.flex-wrapper > img{
+    width: 50%;
+}
 .contents-wrapper{
-    margin-left: 67px;
+    padding-left: 67px;
+    padding-right: 82px;
 }
 
 @media screen and (max-width: 750px){
+    .flex-wrapper{
+        display: block;
+    }
+    .flex-wrapper > .contents-wrapper,
+    .flex-wrapper > img{
+        width: 100%;
+    }
     .contents-wrapper{
-        margin-left: initial;
         margin-top: 7px;
+        padding-left: initial;
+        padding-right: initial;
     }
     h2{
         font-size: 2.0rem;    
@@ -60,6 +76,9 @@ p{
 .mainvisual-wrapper .SP{
     display: none;
 }
+.mainvisual-wrapper img{
+    width: 100%;
+}
 
 @media screen and (max-width: 750px){
     .mainvisual-wrapper .container{
@@ -71,6 +90,10 @@ p{
     }
     .mainvisual-wrapper .SP{
         display: block;
+    }
+    .mainvisual-wrapper img{
+        height: 334px;
+        object-fit: cover;
     }
 }
 /* mainvisual-wrapperここまで */
@@ -114,14 +137,11 @@ a{
 .concept-wrapper .container{
     margin-top: 57px;
     margin-bottom: 60px;
-    display: flex;
-    align-items: center;
 }
 
 @media screen and (max-width: 750px){
     .concept-wrapper .container{
-        display: block;
-        margin-top: 44px;
+        margin-top: 42px;
         margin-bottom: 54px;
     }
 
@@ -130,17 +150,15 @@ a{
 
 /*work-wrapperここから*/
 .work-wrapper .container{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 75px;
+}
+.work-wrapper .flex-wrapper{
+    flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 750px){
     .work-wrapper .container{
-        display: block;
-        margin-bottom: 65px;
+        margin-bottom: 67px;
     }
 }
 /*work-wrapperここまで*/
