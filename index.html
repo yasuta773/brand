@@ -7,6 +7,7 @@
     <title>brand</title>
     <link rel="stylesheet" href="/css/ress.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
 
@@ -21,14 +22,16 @@
         <div class="container">
             <h1><img src="/images/logo.png" alt="Wooden Jewelry"></h1>
             <nav>
-                <ul class="concept"><a href="">Concept</a></ul>
-                <ul class="work"><a href="">Work</a></ul>
-                <ul class="contact"><a href="">Contact</a></ul>
+                <ul>
+                    <li class="concept"><a href="#concept">Concept</a></li>
+                    <li class="work"><a href="#work">Work</a></li>
+                    <li class="contact"><a href="">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <div class="concept-wrapper">
+    <div class="concept-wrapper" id="concept">
         <div class="container">
             <div class="flex-wrapper">
                 <img src="/images/concept.png" alt="concept-image">
@@ -42,7 +45,7 @@
         </div>
     </div>
 
-    <div class="work-wrapper">
+    <div class="work-wrapper" id="work">
         <div class="container">
             <div class="flex-wrapper">
                 <img src="/images/work.png" alt="work-image">
@@ -62,6 +65,6 @@
             <p>&COPY; 2021 Wooden Jewelry</p>
         </div>
     </footer>
-
+<script src="/js/script.js"></script>
 </body>
 </html>

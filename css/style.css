@@ -106,13 +106,14 @@ header .container{
     justify-content: flex-start;
     margin-top: 22px;
 }
-nav{
+ul{
     max-width: 192px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 50px;
+    list-style: none;
 }
 a{
     text-decoration: none;
